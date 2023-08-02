@@ -1,0 +1,151 @@
+body{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    max-width: 1080px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right,rgba(0, 68, 255, 0.63), rgba(28, 194, 28, 0.555), rgba(156, 182, 10, 0.541));
+    color: rgb(0, 0, 0);
+}
+
+
+body.modo-escuro{
+    background-image: linear-gradient(to right,rgb(0, 4, 32) 1%, rgba(4, 4, 71, 0.527), black);
+    color: rgba(255, 255, 255, 0.856);
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+header .logo,
+header .imagem-botao{
+    width: 35px;
+    transition: 0.3s;
+
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+main{
+    padding: 25px;
+}
+
+main .listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;   
+}
+
+main .cartao-pokemon{
+    background-color: #b7f7c585;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover{
+    background-color: rgba(41, 44, 42, 0.315);
+}
+
+.modo-escuro .cartao-pokemon{
+    background-color: #1917309a;
+}
+
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+main .cartao-pokemon .gif{
+    height: 90px;
+    width: 90px;
+}
+
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.grama{
+    background-image: linear-gradient(rgb(0, 255, 0), rgba(0, 136, 52, 0.315));
+}
+
+.fogo{
+    background: linear-gradient(rgba(255, 81, 0, 0.781), rgba(255, 255, 0, 0.808));
+}
+
+.agua{
+    background-image: linear-gradient(rgb(0, 0, 255), rgb(9, 141, 141));
+}
+
+.veneno {
+    background-image: linear-gradient(rgb(76, 124, 12), rgba(57, 1, 94, 0.678));
+}
+
+.voador{
+    background-image: linear-gradient(rgb(172, 214, 228) 30%, rgba(4, 31, 107, 0.342));
+}
+
+.fantasma {
+    background: linear-gradient(purple, rgba(0, 0, 0, 0.918));
+}
+
+.inseto {
+    background-image: linear-gradient(rgba(155, 214, 17, 0.877), rgba(178, 218, 4, 0.178));
+}
+
+.normal{
+    background-image: linear-gradient(grey 25%, rgba(245, 245, 245, 0.705), grey);
+}
+
+.vaporeon,
+.duskull,
+.gengar,
+.growlithe{
+    width: 65px;
+}
+
+.snorlax{
+    width: 120px;
+}
+
